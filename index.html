@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Flona Save</title>
+    <!--  Bootstrap Style -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--  Font-Awesome Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--  Animation Style -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!--  Pretty Photo Style -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!--  Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!--  Custom Style -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Rarely',     7],
+          ['Occasionally',      27],
+          ['Frequently', 26 ],
+          ['Very frequently', 17]
+        ]);
+
+        var options = {
+          title: 'How frequently do you believe forest fires occur in your region?'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Probability rate'],
+          ['Indonesia', 50],
+          ['Russia', 60],
+          ['Brazil', 70],
+          ['Canada', 80],
+          ['United States', 90],
+          ['Australia', 100],
+          ['Greece', 40],
+          ['Portugal', 35]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="pre-div">
+        <div id="loader">
+        </div>
+    </div>
+    <!--/. PRELOADER END -->
+    <div class="navbar navbar-default navbar-fixed-top move-me ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_logo.png" class="navbar-brand-logo " id="logo_logo_logo" alt="" />
+
+                </a> -->
+                <img src="assets/img/logo_logo.png" id="logo_logo_logo" alt="" />
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li >
+                        <a href="#home">HOME 
+
+                        </a>
+
+                    </li>
+                    <li >
+                        <a href="#about">ABOUT
+
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#port-folio">HISTORY
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#help">HOW TO HELP ?
+                        </a>
+
+                    </li>
+
+                    <li >
+                        <a href="#contact">CONTACT 
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--./ NAV BAR END -->
+    <div id="home" >
+        <div class="overlay">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-9 col-md-9 head-text">
+                        <h1 id="divDisp" >WHY WE NEED FOREST?</h1>
+                        <span >
+                            <i class="fa fa-lightbulb-o " ></i><b>OXYGEN SOURCE:</b> Essential for breathing.
+                        </span>
+                        <span>
+                            <i class="fa fa-lightbulb-o" ></i><b>BIODIVERSITY HUB:</b> Supports diverse ecosystems.
+                        </span>
+                        
+                        <!-- <span >
+                            <i class="fa fa-lightbulb-o" ><b>CLIMATE CONTROLLER:</b> Regulates global temperatures.
+                        </span> -->
+                        <span >
+                            <i class="fa fa-lightbulb-o" ></i><B>SOIL PROTECTOR:</B> Prevents erosion and desertification.
+                        </span>
+                        <span >
+                            <i class="fa fa-lightbulb-o" ></i><B>ECONOMIC ASSETS:</B> Provides resources and jobs.
+                        </span>
+                        <span >
+                            <i class="fa fa-lightbulb-o" ></i><b>RECREATIONAL SPACE:</b> Offers leisure and adventure.
+                        </span>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="div-trans text-center">
+                            <h3>DONATE & SAVE </h3>
+                            <h2 ><span>EARTH</span></h2>
+                            <div class="col-lg-12 col-md-12 col-sm-12" >
+
+                           
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address">
+                                </div>
+                                <!-- <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Amount in $">
+                                </div> -->
+                                <div class="form-group">
+                                    <a href="payment.html"><button type="submit" class="btn btn-success btn-block btn-lg">DONATE NOW</button></a>
+                                </div>
+                             </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--./ HOME SECTION END -->
+    
+
+    <div id="about" >
+        <div class="container">
+            <div class="row text-center" id="flexc" style=" display: flex;">
+                <div style="position: relative;right: 100px;" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 sub-head">
+                    <h2  data-wow-delay="0.3s" class="wow rollIn animated" ><strong>ABOUT </strong></h2>
+                    <p>Welcome to Forest Fire Management! We are a dedicated team committed to preserving our precious forests and protecting them from the devastating effects of wildfires. With years of experience in forest management and fire prevention, our mission is to raise awareness, implement sustainable practices, and collaborate with communities to safeguard our natural ecosystems.</p>
+                    <p>At Forest Fire Management, we believe in proactive measures to prevent and mitigate the risk of forest fires. Our approach combines cutting-edge technology, scientific research, and community engagement to develop comprehensive strategies tailored to each unique ecosystem.</p>
+                    <p>Our team is comprised of skilled professionals including forest ecologists, fire behavior analysts, wildlife specialists, and community outreach coordinators. Together, we work tirelessly to monitor forest health, assess fire risks, and implement preventative measures such as controlled burns, fuel reduction, and education programs.</p>
+                    <p>We are passionate about preserving the beauty and biodiversity of our forests for future generations. Join us in our mission to protect and conserve our natural heritage!</p>
+                </div>
+                <div class="aboutpic" style="position: relative;right: 35px;top: 75px;">
+                    <img style="height: 300px;border-radius: 15%;" src="bulb.png" alt="">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4">
+                    <div class="media wow rotateIn animated" data-wow-delay="0.2s">
+                        <div class="pull-left">
+                            <i class="fa fa-recycle fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">We Promote Habitat Restoration</h3>
+                            <p >
+                                Our habitat restoration initiatives aim to rejuvenate degraded ecosystems, providing vital habitats for wildlife and mitigating the impacts of forest fires. 
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.3s">
+                        <div class="pull-left">
+                            <i class="fa fa-history fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Conservation Initiatives</h3>
+                            <p>
+                                We implement various conservation initiatives to protect endangered species, restore ecosystems, and promote sustainable land management practices.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 wow bounceInDown animated" style="padding: 10px;" data-wow-delay="0.6s"   >
+                    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="item">
+
+                                <img src="Conservation engaement.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="Conservation Initiatives.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item active">
+                                <img src="conserve-wildlife-foundation-of-NJ-1024x769.webp" class="img-thumbnail" alt="">
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slider" data-slide-to="0" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="2" class="active"></li>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="media wow rotateIn animated" data-wow-delay="0.4s">
+                        <div class="pull-left">
+                            <i class="fa fa-star-o fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Wildlife Protection</h3>
+                            <p>
+                                Our wildlife protection efforts focus on preserving native species, managing habitats, and mitigating threats such as habitat loss and fragmentation. 
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                        <div class="pull-left">
+                            <i class="fa fa-life-ring fa-4x  "></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Community Engagement</h3>
+                            <p>
+                                We engage with local communities to raise awareness about the importance of forest and wildlife conservation, fostering a sense of stewardship and collective responsibility.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pad-top-botm wow flipInX animated" data-wow-delay="0.7s">
+                <div class="col-lg-8 col-md-8 col-sm-8 " >
+
+                    <h3><strong>What is our profile ?</strong></h3>
+                    Forest Fire and Wildlife Management is a leading organization dedicated to conserving our natural ecosystems and wildlife habitats. 
+                    With a team of experts in ecology, biology, and fire management, we strive to implement effective strategies for mitigating the risks of forest fires and protecting our precious wildlife populations.
+                    Through research, education, and community outreach, we aim to create a sustainable future where forests and wildlife thrive.
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 text-center" >
+                    <i class="fa fa-lightbulb-o big-icon "></i>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--./ ABOUT SECTION END -->
+    <div class="donars-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 ">
+                        <div id="testimonials" class="carousel slide" data-ride="carousel">
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#testimonials" data-slide-to="0" class=""></li>
+                                <li data-target="#testimonials" data-slide-to="1" class=""></li>
+                                <li data-target="#testimonials" data-slide-to="2" class="active"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="item">
+                                    <div class="container center">
+                                        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
+
+                                            <h4><i class="fa fa-quote-left"></i>The forest was a cathedral, and the fire was its baptism.<i class="fa fa-quote-right"></i></h4>
+                                            <div class="user-img pull-right">
+                                                <img src="BOO_Vaillant_2231.tif_.jpg" height="100px" width="100px" alt="" class="img-circle image-responsive">
+                                            </div>
+                                            <h5 class="pull-right"><strong class="c-black">John Vaillant (Writer of "The Golden Spruce")</strong></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="container center">
+                                        <div   class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
+                                            <h4><i class="fa fa-quote-left"></i>Wildfires rage, life finds a way.<i class="fa fa-quote-right"></i></h4>
+                                            <div class="user-img pull-right">
+                                                <img src="norman.webp" height="100px" width="100px" alt="" class="img-circle image-responsive">
+                                            </div>
+                                            <h5 class="pull-right"><strong class="c-black">John Muir(famous naturalist and conservationist)</strong></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class="container center">
+                                        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 slide-custom">
+                                            <h4><i class="fa fa-quote-left"></i>Even the sun shines on the backside of a forest fire.<i class="fa fa-quote-right"></i></h4>
+                                            <div class="user-img pull-right">
+                                                <img src="victoria.jpg" height="100px" width="100px" alt="" class="img-circle image-responsive">
+                                            </div>
+                                            <h5 class="pull-right"><strong class="c-black">Victoria Young (Poet)</strong></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./ DONARS TESTIMONIALS END -->
+    <div id="port-folio" class="pad-top-botm" >
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>HISTORICAL FOREST FIRE</strong></h2>
+                    <!-- <p class="sub-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit onec molestie non sem vel condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+                    
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.4s">
+
+
+                        <img src="The Great Fire Of 1919 (Canada).jpeg" style="height: 250px;width: 500px;"  class="img-responsive" alt="" />
+                        <div class="overlay">
+                            <p>
+                                <span>
+                                The Great Fire Of 1919(1919)
+                                </span>
+                                Despite happening more than a century ago, the Great Fire of 1919 is still remembered as one of the largest and most devastating wildfires in history.
+                            </p>
+                            <a class="preview  " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.5s">
+
+
+                        <img src="2004 Alaska Fire Season (US).png" style="height: 250px; width: 500px;"  class="img-responsive " alt="" />
+                        <div class="overlay">
+                            <p>
+                                <span>
+                                Alaska Fire Season(2014)
+                                </span>
+                                The 2004 fire season in Alaska was the worst on record  in the history of the US state of Alaska in terms of area burned.
+                            </p>
+                            <a class="preview " title="Image Title Here" href="assets/img/portfolio/b.jpg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.6s">
+
+
+                        <img src="2014 Northwest Territories Fires (Canada).jpeg" style="height: 250px;width: 500px;"  class="img-responsive " alt="" />
+                        <div class="overlay">
+                          <p>
+                                <span>
+                                Northwest Territories Fires(2014)
+                                </span>
+                                In the summer of 2014, over 150 separate fires broke out across the Northwest Territories, an area of about 442 square miles (1.1 billion square kilometres) in northern Canada. 
+                            </p>
+                            <a class="preview " title="Image Title Here" href="1939 Black Friday Bushfire (Australia).jpeg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row " style="padding-top: 50px;">
+                <div class="col-lg-4 col-md-4 col-sm-4 "; >
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.7s">
+
+
+                        <img src="1919_2020 Australian Bushfires (Australia).webp"  style="height: 250px;width: 500px;" class="img-responsive " alt="" />
+                        <div class="overlay">
+                           <p>
+                                <span>Australian Bushfires(1919_2020)
+                                </span>
+                                The 2020 Australian bushfires went down in history for their catastrophic impact on wildlife. 
+                            </p>
+                            <a class="preview  " title="Image Title Here" href="assets/img/portfolio/d.jpg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.8s">
+
+
+                        <img src="2003 Siberian Taiga Fires (Russia).webp" style="height: 250px;width: 500px;"  class="img-responsive " alt="" />
+                        <div class="overlay">
+                            <p>
+                                <span>Siberian Taiga Fires(2003)</span>
+                                In 2003 – during one of the hottest summers Europe experienced up to that point – a series of extremely devastating blazes in the taiga forests destroyed over 55 million acres. 
+                            </p>
+                            <a class="preview " title="Image Title Here" href="assets/img/portfolio/e.jpg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 ">
+
+                    <div class="portfolio-item wow rotateIn animated" data-wow-delay="0.9s">
+
+
+                        <img src="1939 Black Friday Bushfire (Australia).jpeg"   style="height: 250px;width: 500px;"  class="img-responsive " alt="" />
+                        <div class="overlay">
+                          <p>
+                                <span>
+                                Black Friday Bushfire
+                                </span>
+                                The fires covered over three-quarters of the state’s area and resulted in 71 casualties, making it the third most deadly bushfire in Australia’s history.
+                            </p>
+                            <a class="preview " title="Image Title Here" href="assets/img/portfolio/h.jpg"><i class="fa fa-search-plus fa-5x"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="MORE mt-4" style="text-align: center;" ><div class="info mt-4">FOR MORE INFO <A href="https://earth.org/largest-wildfires-in-history/ " style="text-decoration: none;">REFER THIS</A></div></div>
+        </div>
+    </div>
+    <!--./ GALLERY/PORTFOLIO SECTION END -->
+    <div id="help" >
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                        <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>HOW YOU CAN HELP ?</strong></h2>
+                        <p class="sub-head">Checkout this vedio , which will let you know how you can help us to save the forest and let the earth live long peacefully. </p>
+                    </div>
+                </div>
+                <div class="row ">
+
+                    <div class="col-lg-6 col-lg-offset-1  col-md-6 col-md-offset-1">
+                        <iframe src="video.html" class="vedio-style wow rotateIn animated " data-wow-delay="0.4s" style="height: 185px; overflow:scroll; width: 100%" src="http://www.cbox.ws/box/?boxid=439&boxtag=7868&sec=main" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-4" style="padding-top: 50px;">
+
+                        <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                            <div class="pull-left">
+                                <i class="fa fa-star-o fa-4x  "></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Watch This Vedio</h3>
+                                <p>
+                                    This vedio will help you to find the importances of forest and wildlife.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="media wow rotateIn animated" data-wow-delay="0.6s">
+                            <div class="pull-left">
+                                <i class="fa fa-history fa-4x  "></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Importance</h3>
+                                <p>
+                                    This video will give a access to the various ways you can contribute to the environment. 
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+<div id="blank-blank">
+<h3>“Trees are the earth’s endless effort to speak to the listening heaven.”
+    </h3>
+    <h5>– Rabindranath Tagore</h5>
+</div>
+
+
+
+       
+
+    <div id="area" >
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                        <h2 data-wow-delay="0.3s" class="wow rollIn animated hellohello" style="color: rgb(250, 10, 10); font-weight: 800;"><strong>Forest Fire rate</strong></h2>
+                        <p class="sub-head cahalcahal">This geo-chart illustrates the relative probability of forest fires occurring in different countries, providing a visual representation of the areas with the highest likelihood of experiencing these natural disasters. By analyzing historical data and key risk factors such as climate, vegetation, and human activity, the chart highlights regions where forest fire occurrences are most prevalent. </p>
+                    </div>
+                </div>
+                <div class="row ">
+
+                    <!-- <div class="col-lg-6 col-lg-offset-1  col-md-6 col-md-offset-1">
+                        <iframe src="video.html" class="vedio-style wow rotateIn animated " data-wow-delay="0.4s" style="height: 185px; overflow:scroll; width: 100%" src="http://www.cbox.ws/box/?boxid=439&boxtag=7868&sec=main" marginheight="1" marginwidth="1" name="cboxmain" id="cboxmain" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+                        
+                    </div> -->
+
+                    <!-- <div class="col-lg-4 col-md-4" style="padding-top: 50px;">
+
+                         <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                            <div class="pull-left">
+                                <i class="fa fa-star-o fa-4x  "></i>
+                            </div> -->
+                            <!-- <div class="media-body">
+                                <h3 class="media-heading">Watch This Vedio</h3>
+                                <p>
+                                    This vedio will help you to find the importances of forest and wildlife.
+                                </p>
+
+                             </div> -->
+                        <!-- </div>
+                        <div class="media wow rotateIn animated" data-wow-delay="0.6s">
+                            <div class="pull-left">
+                                <i class="fa fa-history fa-4x  "></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Importance</h3>
+                                <p>
+                                    This video will give a access to the various ways you can contribute to the environment. 
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>  -->
+                   <br> <div id="regions_div" style="width: 1150px; height: 500px; " ></div> 
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--./ HOME SECTION END -->
+    <div id="about" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 sub-head">
+                    <h2  data-wow-delay="0.3s" class="wow rollIn animated" ><strong>Survey Report</strong></h2>
+                    <p class="sub-head">In this survey report conducted on students, we delve into the repercussions of forest fires on the delicate ecosystems that support various animal species. Through comprehensive analysis and field research, we aim to shed light on the challenges faced by wildlife in the wake of such disasters, emphasizing the urgent need for conservation efforts and sustainable practices to mitigate further damage.</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4">
+                    <div class="media wow rotateIn animated" data-wow-delay="0.2s">
+                        <div class="pull-left">
+                            
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Q1.How frequently do you believe forest fires occur in your region?</h3>
+                            <p >
+                                a) Rarely
+b) Occasionally
+c) Frequently
+d) Very frequently
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.3s">
+                        <div class="pull-left">
+                            
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Q2.Which of the following factors do you think contribute most to forest fires?</h3>
+                            <p>
+                                a) Lightning
+b) Human activities (e.g., campfires, arson)
+c) Climate change
+d) All of the above 
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 wow bounceInDown animated" style="padding: 10px;" data-wow-delay="0.6s"   >
+                    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <!-- <div class="item">
+
+                                <img src="assets/img/slider/1.jpg" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/slider/2.png" class="img-thumbnail" alt="">
+                            </div>
+                            <div class="item active">
+                                <img src="assets/img/slider/3.jpg" class="img-thumbnail" alt="">
+                            </div> -->
+                            <div id="piechart"></div>
+                        </div>
+                        <!-- style="width: 900px; height: 500px;" -->
+                        <!--INDICATORS-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-slider" data-slide-to="0" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel-slider" data-slide-to="2" class="active"></li>
+                        </ol>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+
+                    <div class="media wow rotateIn animated" data-wow-delay="0.4s">
+                        <div class="pull-left">
+                            
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Q3.How do you think forest fires affect wildlife populations?</h3>
+                            <p>
+                                a) Habitat destruction
+b) Loss of food sources
+c) Increased competition for resources
+d) All of the above 
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="media wow rotateIn animated" data-wow-delay="0.5s">
+                        <div class="pull-left">
+                            
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Q4.Which types of wildlife do you believe are most vulnerable to forest fires?</h3>
+                            <p>
+                                a) Large mammals (e.g., bears, deer)
+b) Birds
+c) Reptiles and amphibians
+d) Insects and small mammals
+                            </p>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXJcbZ0ZPptpkxKMUd1nAzpyJZ0O3hEGwxWp6hDknWFbjbyA/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link&urp=gmail_link" class="link-survey">--Click to visit the survey form </a>
+
+                        </div>
+
+                    </div>
+                </div>
+               
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--./ HELP SECTION END -->
+    <div id="contact" >
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <h2 data-wow-delay="0.3s" class="wow rollIn animated"><strong>CONTACT US </strong></h2>
+                    <p class="sub-head">We welcome your inquiries and interest in joining our mission to protect wildlife in the face of forest fires. Whether you have questions about our research, want to collaborate on conservation efforts, or seek to contribute your skills and passion to our cause, we encourage you to reach out. Your support is instrumental in our efforts to safeguard biodiversity and ensure the resilience of ecosystems affected by these natural disasters. Please don't hesitate to contact us – together, we can make a difference for wildlife and the environment.</p>
+
+                    <p class="sub-head  wow rotateIn animated" data-wow-delay="0.4s"><strong>ADDRESS :</strong> CSE Block, Lovely Professional University ,Jalandhar-144411</p>
+                </div>
+            </div>
+            <div class="row  text-center wow rotateIn animated" data-wow-delay="0.4s">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                 <a href="#">   <img src="assets/img/Social/facebook.png" alt="" /></a>
+                  <a href="#">   <img src="assets/img/Social/google-plus.png" alt="" /></a>
+                  <a href="#">   <img src="assets/img/Social/twitter.png" alt="" /></a>
+                    </div>
+                </div>
+            <div class="row pad-top-botm">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" data-wow-delay="0.5s" required="required" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control wow rotateIn animated" required="required" data-wow-delay="0.6s" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message"  required="required" data-wow-delay="0.7s" class="wow rotateIn animated form-control" style="min-height: 150px;" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block btn-lg wow rotateIn animated " data-wow-delay="0.8s">SUBMIT REQUEST</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!--./ CONTACT SECTION END -->
+    <div id="footser-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 col-md-12">
+                   &copy; 2024 Flona Save.in |  <a href="http://www.binarytheme.com/" style="color:#fff;" target="_blank" >CHE110 Project</a>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--./ FOOTER SECTION END -->
+    <!--  Jquery Core Script -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+     <!--  WOW Script -->
+    <script src="assets/js/wow.min.js"></script>
+    <!--  Scrolling Script -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  PrettyPhoto Script -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <!--  Custom Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="//code.tidio.co/jwpe1vz961k1u8dchleolkxok9xwyfjh.js" async></script>
+</body>
+</html>

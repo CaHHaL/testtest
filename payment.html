@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+      }
+
+      .payment-info,
+      .payment-options {
+        width: 45%;
+        text-align: center;
+      }
+
+      .payment-info img {
+        display: flex;
+        margin: 20px auto;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+      .qr {
+        height: 300px;
+        position: absolute0;
+        left: 15px;
+      }
+      .all {
+        position: absolute;
+        top: 49px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Make a Payment</h1>
+    </header>
+    <!-- <div class="all">
+  <main>
+    <section class="payment-info first">
+      <h2>Payment Details</h2>
+      <p>Amount: $100</p>
+      <p>Recipient: Your Name</p>
+      <img class="qr" src="qr pic.jpeg" alt="QR Code">
+    </section>
+    
+    <section class="payment-options second">
+      <h2>Payment Options</h2>
+      <button onclick="pay()">Pay Now</button>
+    </section>
+    </div>
+  </main> -->
+    <div>
+      <div>
+        <br />
+        <br /><br /><br /><br /><br /><br />
+        <img class="qr" src="qr pic.jpeg" alt="QR Code" />
+      </div>
+      <div class="payement-info first">
+        <h2>Payment Details</h2>
+        <p>Amount: $100</p>
+        <p>Recipient: Your Name</p>
+      </div>
+      <div class="payment-options second">
+        <h2>Payment Options</h2>
+        <button onclick="pay()">Pay Now</button>
+      </div>
+    </div>
+
+    <script>
+      function pay() {
+        // You can implement payment functionality here
+        alert("Redirecting to payment gateway...");
+        // Here you can redirect to your payment gateway or integrate payment processing logic
+      }
+    </script>
+  </body>
+</html>
